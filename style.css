@@ -1,0 +1,80 @@
+:root{
+    --bg-body:#0d0e12;
+    --bg-card:#161820;
+    --text-main:#ff79c6;
+    --text-small:#bd93f9;
+    --border-cards:#282a36;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--bg-body);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.countdown-card {
+    text-align: center;
+    width: 100%;
+    max-width: 500px; 
+}
+
+.countdown h1 {
+    color: var(--text-main);
+    font-style: oblique;
+    font-family: cursive , serif;
+    margin-bottom: 10px;
+}
+
+
+.countdown p{
+    color: var(--text-small);
+    font-family: cursive , serif;
+    margin-bottom: 20px;
+}
+
+.timer-container{
+    width: 100%;
+    min-width: 200px;
+    min-height: 380px;
+    background-color: var(--bg-card);
+    border-radius: 20px;
+    border: 1px solid var(--border-cards);
+   padding: 20px 10px;
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    grid: 20px;
+}
+
+.time-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding:10px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.03);
+    flex: 1 1 80px;
+}
+
+.time-box .label {
+    font-size: 17px;
+    color: var(--text-small);
+    text-transform: uppercase;
+}
+
+.time-box .number {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--text-main);
+}
